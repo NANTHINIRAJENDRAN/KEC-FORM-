@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <style>
+        body{
+            background-image: url("digital4.jpg");
+            background-repeat:no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        label{
+            padding:1rem;
+        }
+        a{
+                text-decoration: none;
+                font-weight: bold;
+                padding:1rem 1.5rem;
+                border-radius: 1rem;
+                color:azure;
+                background-color: rgb(247, 132, 151);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="background-color:PINK;color:BLACK">SAVINGS BANK ACOOUNT FORM</h1>
+        <hr>
+        <fieldset>
+        <legend><b>PERSONAL DETAILS</b></legend>
+        <label><b>FIRST NAME:</b></label>
+        <input type="text" name="fname" placeholder="firstname required" width="50%"  pattern="[A-Z.A-Za-z]{1,}"align="middle"><br><br>
+        <label><b> MIDDLE NAME:</b></label>
+        <input type="text" name="mname"><br><br>
+        <label><b> LAST NAME:</b></label>
+        <input type="text" name="lname" placeholder="lastname required" ><br><br>
+        <label><b>MOBILE NO:</b></label>
+        <input type="number" name="no" size="10" pattern=" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="91" name="countrycode"  required><br><br> 
+        <label><b>EMAIL ID:</b></label>
+        <input type="email" name="email" pattern="xxx@yyy.com" size="20" width="50%" required><br><br>
+        <label><b>FATHER'S NAME:</b></label>
+        <input type="text" name="fAname" ><br><br>
+        <label><b>MOTHER'S NAME:</b></label>
+        <input type="text" name="maname"><br><br>
+        <label><b>AADHAR NO:</b></label>
+        <input type="number"><br><br>
+        <label><b>PAN NO:</b></label>
+        <input type="number"><br><br>
+        <label><b>DATE OF BIRTH:</b></label>
+        <input type="date"><br><br>
+        <label><b>PASSWORD</b></label>
+        <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" value="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+        </fieldset>
+        <fieldset>
+        <legend><b>ADDRESS DETAILS<b></legend>
+        <label> COMMUNICATION RESIDENCE ADDRESS:</label>
+        <textarea  rows="6" cols="50" name="addr" wrap="on"></textarea>
+        <label> PERMANENT  ADDRESS:</label>
+        <textarea  rows="6" cols="50" name="addr" wrap="on"></textarea><br><br>
+        <p><b>RESIDENCE TYPE:</b>
+        <input type="radio" id="OWNED" name="house">
+        <label> OWNED</label>
+        <input type="radio" id="RENTED/LEASED" name="house">
+        <label>RENTED/LEASED</label>
+        <input type="radio" id="ANCESTRAL/PARENTAL" name="house">
+        <label> ANCESTRAL/PARENTAL</label>
+        <input type="radio" id="COMPANY PROVIDED" name="house">
+        <label>COMPANY PROVIDED</label></p>
+        </fieldset>
+        <fieldset>
+        <legend><b>CUSTOMER INFORMATION (MANDATORY):</b></legend>
+        <p><b>STATUS:</b>
+        <input type="radio" id="BLIND" name="class">
+        <label> BLIND</label>
+        <input type="radio" id="PHYSICALLY CHALLENGED" name="class">
+        <label> PHYSICALLY CHALLENGED</label>
+        <input type="radio" id="NORMAL" name="class">
+        <label> NORMAL</label>
+        </fieldset>
+        <fieldset>
+        <legend>DOCUMENTS FOR VERIFICATION</legend>
+        <label>RATIONCARD</label>
+        <input type="checkbox" id="RATION CARD" name="DOCUMENT" VALUE="RATION CARD">
+        <label>AADHARCARD</label>
+        <input type="checkbox" id="AADHARCARD" name="DOCUMENT" VALUE="AADHARCARD">
+        <label>PAN CARD</label>
+        <input type="checkbox" id="PAN CARD" name="DOCUMENT" VALUE="PAN CARD">
+        <label>EMPLOYEE ID CARD</label>
+        <input type="checkbox" id="EMPLOYEE ID CARD" name="DOCUMENT" VALUE="EMPLOYEE ID CARD">
+        <label>VOTER ID CARD</label>
+        <input type="checkbox" id="VOTER ID CARD" name="DOCUMENT" VALUE="VOTER ID CARD">
+        </fieldset>
+        <center>
+        <button type="submit" value="submit"><b>SUBMIT</b></button>
+        <button type="submit" value="reset"><b>RESET</b></button></center>
+
+        <a href="index.html">BACK TO HOME</a>
+    </body>
+</html>
+
+
+
+  
+
