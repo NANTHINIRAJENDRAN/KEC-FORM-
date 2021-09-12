@@ -1,16 +1,48 @@
 <html>
   <head>
+    <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      </style>
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
+   
     <nav>
-      <p style="text-align: left">
-        Home
-        <span style="padding: 20px">Personal</span>
+      <p style="text-align: right">
+        <span style="padding: 20px">LOGIN</span>
+        
+        <div class="dropdown">
+          <span style="padding: 20px">Personal</span>
+          <div class="dropdown-content">
+          <p>Accounts</p>
+          <p>Deposits</p>
+          <p>Cards</p>
+          <p>Loans</p>
+          <p>Insurance</p>
+          </div>
+        </div>
         <span style="padding: 40px">Bussiness</span>
         <span style="padding: 50px">Priority</span>
         <span style="padding: 60px">Support</span>
       </p>
+      
 
       <hr style="border-color: pink" />
     </nav>
